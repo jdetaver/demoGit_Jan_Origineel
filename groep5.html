@@ -7,7 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    conflicten genereren : 
-    cursist 1 zet hier zijn naam ==> 
+    cursist 9 = A
+    cursist 10 = B
+    
+    conflicten genereren :
+        cursist A : zet naam in het bestand
+        cursist A : commit
+        cursist A : push naar remote
+        cursist B : zet naam in dat bestand
+        cursist B : commit
+        cursist B : probeer push en merk op dat je een fout krijgt
+        cursist B : pull
+        cursist B : lost conflict op
+        cursist B : commit (eventueel empty commit)
+        cursist B : push naar remote
+
+        zet hier zijn naam ==>  
 </body>
 </html>
