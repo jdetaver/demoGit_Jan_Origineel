@@ -15,6 +15,7 @@
 <body>
     <h1>Demo Git</h1>
     <ol>
+        <li>Ik maak gebruik van de GitLens-extension</li>
         <li>Clonen van repository</li>
         <li>Commit, push, pull (fetch & merge)</li>
         <li>OPDRACHT :
@@ -33,7 +34,7 @@
                 <li>cursist A : commit</li>
                 <li>cursist A : push naar remote</li>
                 <li>cursist B : zet naam in dat bestand</li>
-                <li>cursist B : commit</li>
+                <li>cursist B : commit (lokale commit is nu dus verschillend van de remote)</li>
                 <li>cursist B : probeer push en merk op dat je een fout krijgt</li>
                 <li>cursist B : pull</li>
                 <li>cursist B : lost conflict op</li>
@@ -58,6 +59,7 @@
                 <li>Update branch met info uit main (activeer branch en merge main branch into ...)</li>
                 <li>Los de conflicten op als die er zijn</li>
                 <li>Merge branch into main</li>
+                <li>Commit lokale repository</li>
                 <li>Push main naar remote</li>
             </ol>
         </li>
@@ -70,7 +72,7 @@
                 <li>Voer nu de bovenstaande stappen uit om jouw code aan de remote repository toe te voegen</li>
             </ul>
         </li>
-        <li>Ingore file : (enkel voor untracked files)
+        <li>Ingore file : (enkel voor untracked files !!)
             <ul>
                 <li>maak .gitignore file aan</li>
                 <li>om een map te ignoren : /mapnaam</li>
@@ -90,6 +92,21 @@
                 </li>
             </ul>
             <br>
+        </li>
+        <li>Restore (oude versie terug zetten)</li>
+        <li>
+            <ol>
+                <li>Klik de file aan</li>
+                <li>Recht-klik op de file</li>
+                <li>Kies "File History"</li>
+                <li>Kies "Open File History"</li>
+                <li>Je krijgt een overzicht van de commits</li>
+                <li>Rechts-klik op de commit</li>
+                <li>Kies "Restore (checkout)"</li>
+                <li>Lokaal is de wijziging nu doorgevoerd</li>
+                <li>Commit</li>
+                <li>Push</li>
+            </ol>
         </li>
     </ol>
 </body>
