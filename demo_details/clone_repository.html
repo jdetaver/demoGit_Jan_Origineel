@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clone Repository</title>
+    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <script src="src/addCodeToClipboardFunct.js" defer></script>
+</head>
+
+<body>
+    <h1>Clonen van repository</h1>
+    <ul>
+        <li class="voorbereiding">Voorbereiding : haal de web URL op die aangeeft waar je de git repository kan vinden
+            deze web URL ziet er als volgt uit : https://github.com/jdetaver/demoGITYYYYMM.git .
+            Waarbij YYYY het jaartal voorstelt en MM de maand.
+        </li>
+        <li class="optie">Optie 1 : via "Welcome"-scherm
+            <ol>
+                <li>Open VSCode</li>
+                <li>In "Welcome"-scherm klik je op "Clone Git Repository"</li>
+                <li>De command palette opent en vraagt naar de web URL</li>
+                <li>Geef de web URL in en druk op enter</li>
+                <li>Kies een folder om de repository in te bewaren</li>
+            </ol>
+        </li>
+        <li class="optie">Optie 2 : via command palette
+            <ol>
+                <li>Open de command palette
+                    <ul>
+                        <li>via menu "View"->"Command Palette"</li>
+                        <li>de sneltoets van het command palette Ctrl+Shift+P</li>
+                        <li>via F1</li>
+                    </ul>
+                </li>
+                <li>typ "git"</li>
+                <li>alle git commando's worden getoond</li>
+                <li>kies voor "Git: Clone"</li>
+                <li>Geef de web URL in en druk op enter</li>
+                <li>Kies een folder om de repository in te bewaren</li>
+            </ol>
+        </li>
+        <li class="optie">Optie 3 : via de terminal in VSCode
+            <ol>
+                <li>Open een terminal via menu "Terminal"->"New terminal"</li>
+                <li>Open de correcte map (bijvoorbeeld) <code class="terminal">cd "C:\xampp\htdocs\demoGIT"</code></li>
+                <li>Clone de repository <code
+                        class="terminal">git clone https://github.com/jdetaver/demoGITYYYMM.git</code></li>
+            </ol>
+        </li>
+    </ul>
+</body>
+
+</html>
