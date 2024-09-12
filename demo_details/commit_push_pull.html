@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Commit, push, pull (fetch & merge)</title>
-    <link rel="stylesheet" href="style\style.css">
+    <link rel="stylesheet" href="style/style.css">
     <script src="src/addCodeToClipboardFunct.js" defer></script>
 </head>
 
 <body>
     <h1>Commit, push, pull (fetch & merge)</h1>
     <ul>
-        <li class="voorbereiding">
-            
+        <li class="voorbereiding">De GIT levenscyclus :
+            <ol>
+                <li>Untracked directory : Elke map in je filesystem</li>
+                <li>Working directory : een map die opgevolgd wordt door GIT (tracked)
+                    <code>git init</code>
+                </li>
+                <li>Staging area : files die moeten opgevolgd worden voeg je toe aan de staging area
+                    <code>git add *</code>
+                </li>
+                <li>Local repository : een lokale "foto" van je files in de huidige toestand
+                    <code>git commit -m "commit bericht"</code>
+                </li>
+                <li>Remote repository : een "foto" van je files op een andere locatie (bv : Gitbub)
+                    <code>git push</code>
+                </li>
+            </ol>
         </li>
+        
         <li class="optie">Optie 1 : via "Welcome"-scherm
             <ol>
                 <li>Open VSCode</li>

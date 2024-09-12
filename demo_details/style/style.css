@@ -2,8 +2,20 @@
 
 body{
     background-color: rgb(214, 214, 231);
-    font-family: Montserrat;
+    font-family: Montserrat;    
+    max-width: 70%;
+    margin-left: 10%;
 }
+
+h1{
+    margin: 10px;
+}
+
+/*
+.h1{
+    margin: 10px;
+}
+*/
 
 .olZonderGetallen{
     list-style-type: circle;
@@ -81,5 +93,14 @@ code .number {
 
 .optie>ol{
     margin-top: 8px;
+}
+
+.cssKiezer{
+    background-color: #4183b9;
+    position: float;
+    width : 150px;
+    float: right;
+    margin : 0px;
+    padding : 0px;
 }
 
