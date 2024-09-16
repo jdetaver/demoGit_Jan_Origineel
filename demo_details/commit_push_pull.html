@@ -11,69 +11,59 @@
 <body>
     <h1>Commit, push, pull (fetch & merge)</h1>
     <ul>
-        <li class="voorbereiding">De GIT levenscyclus :
+        <li class="voorbereiding optie">De GIT levenscyclus :
             <div>
                 <img src="./img/stappen.jpeg" alt="stappen van de git levenscyclus">
             </div>
             <ol>
                 <li>Untracked directory : Elke map in je filesystem</li>
-                <li>Working directory : een map die opgevolgd wordt door GIT (tracked)
-                    <code>git init</code>
-                </li>
-                <li>Staging area : files die moeten opgevolgd worden voeg je toe aan de staging area
-                    <code>git add *</code>
-                </li>
-                <li>Local repository : een lokale "foto" van je files in de huidige toestand
-                    <code>git commit -m "commit bericht"</code>
-                </li>
-                <li>Remote repository : een "foto" van je files op een andere locatie (bv : Gitbub)
-                    <code>git push</code>
-                </li>
+                <li>Working directory : een map die opgevolgd wordt door GIT (tracked)</li>
+                <li>Staging area : files die moeten opgevolgd worden voeg je toe aan de staging area</li>
+                <li>Local repository : een lokale "foto" van je files in de huidige toestand</li>
+                <li>Remote repository : een "foto" van je files op een andere locatie (bv : Gitbub)</li>
             </ol>
         </li>
-        
-
-        <li class="optie">Stappen in VSCode : 
+        <li class="optie">Stappen in VSCode :
             <ol>
-                <li>Commit : <img src="./img/commitbutton.png" alt="commit button" class="imgsmall brafter"> 
+                <li>Commit : <img src="./img/commitbutton.png" alt="commit button" class="imgsmall brafter">
                     In sourcecontrol staan de wijzigingen opgelijst. Wijzigingen worden automatisch
                     toegevoegd aan de lijst van files die opgenomen zijn in de commit. Vergeet de message
-                    die bij deze commit hoort niet in te vullen. 
+                    die bij deze commit hoort niet in te vullen.
                 </li>
                 <li>Sync Changes : <img src="./img/syncChanges.png" alt="sync changes button" class="imgsmall brafter">
-                    Nadat je een commit gedaan hebt (en er dus lokaal geen wijzigingen staan te wachten) zal 
+                    Nadat je een commit gedaan hebt (en er dus lokaal geen wijzigingen staan te wachten) zal
                     VSCode je een "Sync Changes"-knop tonen. Via deze weg zullen de wijzigingen van de lokale
-                    repository naar de remote repository geduwd worden én zullen de wijzigingen van de remote 
+                    repository naar de remote repository geduwd worden én zullen de wijzigingen van de remote
                     repository ingeladen worden.
                 </li>
-                <li>Pull : 22</li>
-                <li>Geef de web URL in en druk op enter</li>
-                <li>Kies een folder om de repository in te bewaren</li>
             </ol>
         </li>
-        <li class="optie">Optie 2 : via command palette
+        <li class="optie">Extra stappen in VSCode :
+            Indien je dat wenst kan je via deze knop alle handelingen zelf ook uitvoeren
+            <img src="./img/source control extra.png" alt="source control extra hamburger menu"
+                class="imgsmall brafter">
             <ol>
-                <li>Open de command palette
-                    <ul>
-                        <li>via menu "View"->"Command Palette"</li>
-                        <li>de sneltoets van het command palette Ctrl+Shift+P</li>
-                        <li>via F1</li>
-                    </ul>
+                <li>Push : Om jou local repository naar de remote repository te sturen
                 </li>
-                <li>typ "git"</li>
-                <li>alle git commando's worden getoond</li>
-                <li>kies voor "Git: Clone"</li>
-                <li>Geef de web URL in en druk op enter</li>
-                <li>Kies een folder om de repository in te bewaren</li>
+                <li>Pull : zal eerst de remote repository ophalen (fetch) en deze in jouw
+                    repository inladen (merge)
+                </li>
+                <li>Fetch en Merge zijn ook afzonderlijk beschikbaar</li>
             </ol>
         </li>
-        <li class="optie">Optie 3 : via de terminal in VSCode
-            <ol>
-                <li>Open een terminal via menu "Terminal"->"New terminal"</li>
-                <li>Open de correcte map (bijvoorbeeld) <code class="terminal">cd "C:\xampp\htdocs\demoGIT"</code></li>
-                <li>Clone de repository <code
-                        class="terminal">git clone https://github.com/jdetaver/demoGITYYYMM.git</code></li>
-            </ol>
+        <li class="optie">Met de volgende git commando's kan je hetzelfde doen
+            <ul>
+                <li>Een Untracked directory omvormen naar een <code>git init</code></li>
+                <li>Files toevoegen aan de staging area <code>git add *</code></li>
+                <li>Commit naar local repository <code>git commit -m "commit bericht"</code></li>
+                <li>Pushen van de local repository naar de remote repository <code>git push</code></li>                
+                <li>De remote repository ophalen <code>git pull</code> of met de afzonderlijke commando's :
+                        <ul>
+                            <li><code>git fetch origin</code></li>
+                            <li><code>git merge <i>branchname</i></code></li>
+                        </ul>                
+                </li>
+            </ul>
         </li>
     </ul>
 </body>
