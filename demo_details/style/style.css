@@ -8,7 +8,7 @@ body{
 }
 
 h1{
-    margin: 10px;
+   /* margin: 10px;*/
 }
 
 /*
@@ -106,6 +106,14 @@ code .number {
 
 .imgsmall{
     width: 250px;
+}
+
+.imgmed{
+    width: 500px;
+}
+
+.imglarge{
+    width: 1000px;
 }
 
 

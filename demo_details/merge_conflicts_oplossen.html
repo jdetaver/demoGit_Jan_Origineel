@@ -10,45 +10,55 @@
 
 <body>
     <h1>Mergeconflicts oplossen</h1>
+    <h2>Wat is een merge conflict ?</h2>
+    <img src="./img/merge conflict large.png" alt="merge conflicts scenario">
+    <p>
+        Merge conflicten treden voornamelijk op zodra verschillende mensen aan een project samen werken.
+        Een merge conflict treedt op als git er niet in slaagt om 2 repository's samen te voegen. Git vraagt
+        dan assistentie om bij het behouden van code.
+    </p>
+    <p>Voorbeeld :
+    <ol>
+        <li>
+            Twee personen werken aan een file. Bij de start van de werkdag halen ze de remote repository
+            nog even binnen (<code>pull</code>). Beide hebben dus dezelfde startpositie. </li>
+        <li>Persoon A past de file aan van "Dag VDAB" naar "Dag PHP"</li>
+        <li>Persoon B past zijn file ook aan : van "Dag VDAB" naar "Dag JS"</li>
+        <li>Beide personen doen een <code>commit</code> zodat hun eigen lokale repository aangepast is.</li>
+        <li>Op het einde van de werkdag stuurt persoon A zijn repository naar de remote repository (<code>push</code>)
+        </li>
+        <li>Deze ondervind daarbij geen problemen. De remote repository weet namelijk wat moet gebeuren :
+            wijzigen "VDAB" in "PHP"</li>
+        <li>Nu zal persoon B zijn wijzigen doorsturen naar de remote repository. De wijziging zou moeten
+            zijn : wijzig "VDAB" in "JS". Deze actie is echter onmogelijk aangezien de remote repository
+            reeds verder geëvolueerd is. Er ontstaat dus een merge conflict.</li>
+    </ol>
+    </p>
+    <h2>Hoe los ik ze op ?</h2>
+    <img src="./img/merge conflict oplossen 1.png" alt="voorbeeld van een merconflict in vscode"
+        class="imglarge brafter">
+
+    <p>Zodra git een merge conflict detecteert zal VSCode beide aanpassingen tonen. Je keuze kan je
+        gewoon aanklikken en VSCode doet de aanpassing in jouw lokale repository. De keuzen zijn voor 
+        de hand liggend : 
+    </p>
     <ul>
-        <li class="voorbereiding">Voorbereiding : haal de web URL op die aangeeft waar je de git repository kan vinden
-            deze web URL ziet er als volgt uit : https://github.com/jdetaver/demoGITYYYYMM.git .
-            Waarbij YYYY het jaartal voorstelt en MM de maand.
-        </li>
-        <li class="optie">Optie 1 : via "Welcome"-scherm
-            <ol>
-                <li>Open VSCode</li>
-                <li>In "Welcome"-scherm klik je op "Clone Git Repository"</li>
-                <li>De command palette opent en vraagt naar de web URL</li>
-                <li>Geef de web URL in en druk op enter</li>
-                <li>Kies een folder om de repository in te bewaren</li>
-            </ol>
-        </li>
-        <li class="optie">Optie 2 : via command palette
-            <ol>
-                <li>Open de command palette
-                    <ul>
-                        <li>via menu "View"->"Command Palette"</li>
-                        <li>de sneltoets van het command palette Ctrl+Shift+P</li>
-                        <li>via F1</li>
-                    </ul>
-                </li>
-                <li>typ "git"</li>
-                <li>alle git commando's worden getoond</li>
-                <li>kies voor "Git: Clone"</li>
-                <li>Geef de web URL in en druk op enter</li>
-                <li>Kies een folder om de repository in te bewaren</li>
-            </ol>
-        </li>
-        <li class="optie">Optie 3 : via de terminal in VSCode
-            <ol>
-                <li>Open een terminal via menu "Terminal"->"New terminal"</li>
-                <li>Open de correcte map (bijvoorbeeld) <code class="terminal">cd "C:\xampp\htdocs\demoGIT"</code></li>
-                <li>Clone de repository <code
-                        class="terminal">git clone https://github.com/jdetaver/demoGITYYYMM.git</code></li>
-            </ol>
-        </li>
+        <li>Accept Current Change : behoudt jouw (groen) aanpassing en laat de andere aanpassing vallen</li>
+        <li>Accept Incomming Change : behoudt de aanpassing van de remote repository (blauw) en laat jouw aanpassing vallen</li>
+        <li>Accept Both Changes : behoudt beide aanpassingen. </li>
+        <li>Compare Changes : toont beide aanpassingen in de file op een andere manier</li>
     </ul>
+    <p>Het is mogelijk dat je eerst nog de aanpassingen van de staging area naar de lokale repository moet brengen
+        Indien dat het geval is moet je nog een <code>commit</code> doen.
+    </p>
+    <p>Nu kan je jouw lokale repository doorsturen naar de remote zonder dat dit nog problemen zal opleveren.
+        Klik hiervoor op de "Sync Changes"-knop.
+        <img src="./img/syncChanges.png" alt="foto van sync changes knop"  class="imgsmall brafter">
+    </p>
+    
+
+
+
 </body>
 
 </html>
