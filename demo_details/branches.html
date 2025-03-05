@@ -10,13 +10,87 @@
 
 <body>
     <h1>Branches</h1>
-    <p>Brances zijn aftakkingen van de hoofdtak
-        
+    <p>Brances zijn aftakkingen van de hoofdtak. Je zou ze bijvoorbeeld kunnen gebruiken om
+        functionaliteiten in te bouwen die nog moeten getest worden. Zodra je werk af is (eventueel
+        getest) kan je de zijtak (branch) in de hoofdtak (main-branch) inladen.
     </p>
     <ol>
-        <li>Maak een branch aan (create new branch)</li>
-        <li>Switch tussen branches</li>
-        <li>Branches van anderen (source control->fetch)</li>
+        <li>Maak een branch aan (create new branch)
+            <ol>
+                <li class="optie">Optie 1 : via branchnaam , linksonder
+                    <ol>
+                        <li>klik op de branchnaam</li>
+                        <li>in het menu bovenaan kies je voor "+ Create new branch ..."</li>
+                        <li>geef een branchnaam in</li>
+                        <li>merk op dat je nu in de nieuwe branch werkt</li>
+                    </ol>
+                </li>
+
+                <li class="optie">Optie 2 : via source control
+                    <ol>
+                        <li>more actions</li>
+                        <li>Branch</li>
+                        <li>create branch</li>
+                        <li>geef een branchnaam in</li>
+                        <li>merk op dat je nu in de nieuwe branch werkt</li>
+                    </ol>
+                </li>
+
+                <li class="optie">Optie 3 : via command line
+                    <ol>
+                        <li><code class="terminal">git checkout -b branchnaam</code></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Switch tussen branches
+            <ol>
+                <li class="optie">Optie 1 : via branchnaam , linksonder
+                    <ol>
+                        <li>klik op de branchnaam</li>
+                        <li>in het menu bovenaan kies je voor de branch die je wil</li>
+                        <li>merk op dat je nu in de nieuwe branch werkt</li>
+                    </ol>
+                </li>
+
+                <li class="optie">Optie 2 : via command line
+                    <ol>
+                        <li><code class="terminal">git checkout branchnaam</code></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>Branches vanop de remote binnen halen (source control->fetch)
+            <ol>
+                <li class="optie">Optie 1 : via source control
+                    <ol>
+                        <li>more actions</li>
+                        <li>Fetch</li>
+                    </ol>
+                </li>
+            </ol>
+
+        </li>
+        <li>Merge Branches
+            <ol>
+                <li class="optie">Optie 1 : via source control
+                    <ol>
+                        <li>LET OP !! activeer eerst de ontvangende branch</li>
+                        <li>more actions</li>
+                        <li>Branch</li>
+                        <li>Merge</li>
+                        <li>Kies de te mergen branch</li>
+                    </ol>
+                </li>
+
+                <li class="optie">Optie 2 : via command line
+                    <ol>
+                        <li><code class="terminal">git checkout hooftak</code></li>
+                        <li><code class="terminal">git merge zijtak</code></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
     </ol>
 </body>
 

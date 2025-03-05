@@ -1,4 +1,3 @@
-
 function copyToClipboard(veldId) {
     var copyVeld = document.getElementById(veldId);
     copyVeld.select();
@@ -23,6 +22,7 @@ function showCopyIcon(element) {
     // Set the icon position near the cursor
     icon.style.left = `${rect.right + 10}px`; // 10px to the right of the cursor
     icon.style.top = `${rect.top}px`;  // 10px below the cursor
+    
 
     document.body.appendChild(icon);
 
